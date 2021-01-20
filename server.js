@@ -16,6 +16,10 @@ app.get('/api/notes', (req, res) => {
       ]
   )
 })
+app.post('/api/notes', (req, res) => {
+    // save a note
+    res.json({"status":"ok"})
+})
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
